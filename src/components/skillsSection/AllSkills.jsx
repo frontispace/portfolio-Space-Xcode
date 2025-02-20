@@ -51,7 +51,7 @@ const AllSkills = () => {
       <div className="flex items-center justify-center relative gap-2 max-w-[1200px] mx-auto">
         {skills.map((item, index) => {
           return (
-            <motion.div
+            <line.div
               variants={fadeIn("up", `0.${index}`)}
               initial="hidden"
               whileInView="show"
@@ -63,7 +63,7 @@ const AllSkills = () => {
                 text={item.skill}
                 imgSvg={<item.icon />}
               />
-            </motion.div>
+            </line.div>
           );
         })}
       </div>
